@@ -3,31 +3,58 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Feliz mesiversario</title>
-	<link rel="stylesheet" type="text/css" href="css/normalize.css">
-	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<title>Piano Learn</title>
+	<link rel="stylesheet" type="text/css" href="normalize.css">
+	<link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
 
-	<script type="text/javascript" src="js/script.js"></script>
-	<header class="header">
-		<nav class="header__nav flex-container">
-			<h2 class="nav__well">Empezamos guapa!</h2>
-			<a href="empezamos.html" class="nav__cta">Empezamos</a>
-			<a href="recuerdos.html" class="nav__cta">Recuerdos</a>
-			<a href="galeria.html" class="nav__cta">Galeria</a>
-		</nav>
-	</header>
-	<main class="main flex-container">
-		<div class="main__texts">
-			<h2 class="main__title">Ahora si, aqui comienza mi regalo para ti!</h2>
-			<p class="main__copy">Espero que te guste. Se que no es mucho pero lo hice con todo mi corazon de veras que si.</p>
-			<a href="empezamos.html" class="main__cta">Empezamos!</a>
-			<figure class="main__img">
-				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="fill: rgba(255, 255, 255, 1);transform: scale(5.0) ;msFilter:;"><path d="M20 7h-1.209A4.92 4.92 0 0 0 19 5.5C19 3.57 17.43 2 15.5 2c-1.622 0-2.705 1.482-3.404 3.085C11.407 3.57 10.269 2 8.5 2 6.57 2 5 3.57 5 5.5c0 .596.079 1.089.209 1.5H4c-1.103 0-2 .897-2 2v2c0 1.103.897 2 2 2v7c0 1.103.897 2 2 2h12c1.103 0 2-.897 2-2v-7c1.103 0 2-.897 2-2V9c0-1.103-.897-2-2-2zm-4.5-3c.827 0 1.5.673 1.5 1.5C17 7 16.374 7 16 7h-2.478c.511-1.576 1.253-3 1.978-3zM7 5.5C7 4.673 7.673 4 8.5 4c.888 0 1.714 1.525 2.198 3H8c-.374 0-1 0-1-1.5zM4 9h7v2H4V9zm2 11v-7h5v7H6zm12 0h-5v-7h5v7zm-5-9V9.085L13.017 9H20l.001 2H13z"></path></svg>
-			</figure>
-		</div>
+	<section class="partitura">
+			<a href="#sol" class="line__space"></a>
+			<div class="line__divisor">
+			</div>
+			<a href="#fa" class="line__note"></a>
+			<a href="#mi" class="line__space"></a>
+			<div class="line__divisor">
+			</div>
+			<a href="#re" class="line__note"></a>
+			<a href="#do" class="line__space"></a>
+			<div class="line__divisor">
+			</div>
+			<a href="#si" class="line__note"></a>
+			<a href="#la" class="line__space"></a>
+			<div class="line__divisor">
+			</div>
+			<a href="#sol" class="line__note"></a>
+			<a href="#fa" class="line__space"></a>
+			<div class="line__divisor">
+			</div>
+			<a href="#mi" class="line__note"></a>
+			<a href="#re" class="line__space"></a>
+			<a href="#do" class="line__note"></a>
+			<div class="line__divisor">
+			</div>
+	</section>
 
-	</main>
+	<section class="piano">
+		<div class="piano__blanco">
+			<a href="#" class="blanco__tecla" id="do">C</a>
+			<a href="#" class="blanco__tecla" id="re">D</a>
+			<a href="#" class="blanco__tecla" id="mi">E</a>
+			<a href="#" class="blanco__tecla" id="fa">F</a>
+			<a href="#" class="blanco__tecla" id="sol">G</a>
+			<a href="#" class="blanco__tecla" id="la">A</a>
+			<a href="#" class="blanco__tecla" id="si">B</a>
+		</div>
+		<div class="piano__negro">
+			<a href="#" class="negro__tecla">C# <br> Db</a>
+			<a href="#" class="negro__tecla">D# <br> Eb</a>
+			<a href="#" class="negro__tecla">F# <br> Gb</a>
+			<a href="#" class="negro__tecla">G# <br> Ab</a>
+			<a href="#" class="negro__tecla">A# <br> Bb</a>
+		</div>
+		
+	</section>
+
 </body>
 </html>
