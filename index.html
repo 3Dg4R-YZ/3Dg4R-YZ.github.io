@@ -1,60 +1,66 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Piano Learn</title>
-	<link rel="stylesheet" type="text/css" href="normalize.css">
-	<link rel="stylesheet" type="text/css" href="styles.css">
+	<title>La Hermandad Oscura</title>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+
 </head>
-<body>
+<body onload="myFunction()">
+	<figure id="door" style="transform: scale(1);">
 
-	<section class="partitura">
-			<a href="#sol" class="line__space"></a>
-			<div class="line__divisor">
-			</div>
-			<a href="#fa" class="line__note"></a>
-			<a href="#mi" class="line__space"></a>
-			<div class="line__divisor">
-			</div>
-			<a href="#re" class="line__note"></a>
-			<a href="#do" class="line__space"></a>
-			<div class="line__divisor">
-			</div>
-			<a href="#si" class="line__note"></a>
-			<a href="#la" class="line__space"></a>
-			<div class="line__divisor">
-			</div>
-			<a href="#sol" class="line__note"></a>
-			<a href="#fa" class="line__space"></a>
-			<div class="line__divisor">
-			</div>
-			<a href="#mi" class="line__note"></a>
-			<a href="#re" class="line__space"></a>
-			<a href="#do" class="line__note"></a>
-			<div class="line__divisor">
-			</div>
+	</figure>
+	<section class="section">
+		<h1 class="section__title">La Hermandad Oscura</h1>
+		<a href="#modal" class="section__minirules">
+			<img src="img/rules.png" class="minirules__img">
+		</a>
+		<figure id="modal" class="section__rules">
+			<img src="img/rules.jpg" class="rules__img">
+		</figure>
+		<a href="#" class="modaloff"></a>
+		<figure id="know"></figure>
+
+
+		<h2 class="section__subtitle">Miembros</h2>
+		<a href="#astrid" class="section__face">Astrid</a>
+		<a href="#nazir" class="section__face">Nazir</a>
+		<a href="#ciceron" class="section__face">Cicerón</a>
+		<a href="#babette" class="section__face">Babette</a>
+		<a href="#gabriella" class="section__face">Gabriella</a>
+		<a href="#festo" class="section__face">Festo Krex</a>
+		<a href="#arnbjorn" class="section__face">Arnbjorn</a>
+		<a href="#veezara" class="section__face">Veezara</a>
+
+
+		<figure id="astrid" class="section__char">
+			<img src="img/astrid.png" class="char__img">
+		</figure>
+		<figure id="nazir" class="section__char">
+			<img src="img/nazir.png" class="char__img">
+		</figure>
+		<figure id="ciceron" class="section__char">
+			<img src="img/ciceron.png" class="char__img">
+		</figure>
+		<figure id="babette" class="section__char">
+			<img src="img/babette.png" class="char__img">
+		</figure>
+		<figure id="gabriella" class="section__char">
+			<img src="img/gabriella.png" class="char__img">
+		</figure>
+		<figure id="festo" class="section__char">
+			<img src="img/festo.png" class="char__img">
+		</figure>
+		<figure id="arnbjorn" class="section__char">
+			<img src="img/arnbjorn.png" class="char__img">
+		</figure>
+		<figure id="veezara" class="section__char">
+			<img src="img/veezara.png" class="char__img">
+		</figure>
 	</section>
 
-	<section class="piano">
-		<div class="piano__blanco">
-			<a href="#" class="blanco__tecla" id="do">C</a>
-			<a href="#" class="blanco__tecla" id="re">D</a>
-			<a href="#" class="blanco__tecla" id="mi">E</a>
-			<a href="#" class="blanco__tecla" id="fa">F</a>
-			<a href="#" class="blanco__tecla" id="sol">G</a>
-			<a href="#" class="blanco__tecla" id="la">A</a>
-			<a href="#" class="blanco__tecla" id="si">B</a>
-		</div>
-		<div class="piano__negro">
-			<a href="#" class="negro__tecla">C# <br> Db</a>
-			<a href="#" class="negro__tecla">D# <br> Eb</a>
-			<a href="#" class="negro__tecla">F# <br> Gb</a>
-			<a href="#" class="negro__tecla">G# <br> Ab</a>
-			<a href="#" class="negro__tecla">A# <br> Bb</a>
-		</div>
-		
-	</section>
-
+	<script type="text/javascript" src="scripts/script.js"></script>
 </body>
 </html>
