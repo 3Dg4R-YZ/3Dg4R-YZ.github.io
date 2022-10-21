@@ -1,0 +1,215 @@
+
+@font-face{
+	font-family: 'Satan';
+	src: url('../fonts/Satan.ttf');
+}
+@font-face{
+	font-family: 'Coffin';
+	src: url('../fonts/Coffin.ttf');
+}
+
+:root{
+	--color-primary:   #0D1B2A;
+	--color-secundary: #1B263B;
+	--color-ternary:   #415A77;
+	--color-cuaternary:#778DA9;
+	--color-quiternary:#E0E1DD;
+	--color-sangre: #9c0001;
+}
+
+body{
+	display: flex;
+	font-size: 40px;
+	color: var(--color-sangre);
+	background-color: #000;
+}
+
+#door{
+	position: fixed;
+	z-index: 200;
+	width: 100%;
+	height: 100vh;
+	background-image: url("../img/puerta.webp");
+	background-position: center;
+	background-size: cover;
+}
+
+.section{
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	margin: auto;
+	background-image: url("../img/fondo.jpg");
+	background-position: left;
+	background-size: 500px;
+	background-repeat: no-repeat;
+	display: grid;
+	grid-template-columns: repeat(16, 1fr);
+	grid-template-rows: repeat(9, 1fr);
+	justify-items: center;
+	align-items: center;
+	/*clip-path: circle(0% at 100% 0);*/
+}
+
+@keyframes start{
+	75%{
+		clip-path: circle(50% at 100% 0);
+	}
+	100%{
+		clip-path: circle(150% at 100% 0);
+	}
+}
+
+.section *{
+	position: absolute;
+}
+
+.section__title{
+	font-family: "Coffin",sans-serif;
+	grid-area: 1 / 3 / 3 / -3;
+	text-align: center;
+}
+
+.section__subtitle{
+	font-family: "Coffin",sans-serif;
+	grid-area: 3 / 9 / 4 / 15;
+	text-align: center;
+}
+
+.section__minirules{
+	width: 70%;
+	height: 80%;
+	grid-area: 4 / -3 / 6 / -1;
+}
+.minirules__img{
+	width: 80%;
+	height: 80%;
+}
+.section__minirules:hover{
+	width: 90%;
+	height: 100%;
+}
+
+.section__rules{
+	width: 100%;
+	height: 90%;
+	grid-area: 1 / 6 / -1 / -7;
+	z-index: 10;
+	transform: scale(0);
+	transform-origin: left;
+}
+.rules__img{
+	width: 100%;
+	height: 100%;
+}
+.modaloff{
+	grid-area: 1 / 1 / -1 / -1;
+	background-color: #000000bb;
+	width: 100%;
+	height: 100%;
+	transform: scale(0);
+	z-index: 1;
+	cursor: default;
+}
+
+.section__rules:target{
+	transform: scale(1);
+}
+.section__rules:target ~ .modaloff{
+	transform: scale(1);
+}
+
+#know{
+	width: 90%;
+	height: 90%;
+	background-image: url("../img/know.svg");
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	grid-area: 1 / -4 / 4 / -1;
+}
+
+.section__face{
+	text-decoration: none;
+	color: #9c0001;
+	font-family: Satan;
+	text-align: center;
+}
+.section__face:hover{
+	color: #b2b2b2;
+}
+
+a[href="#astrid"]{
+	grid-area: 4 / 8 / 5 / 11;
+}
+a[href="#nazir"]{
+	grid-area: 4 / 11 / 5 / 13;
+}
+a[href="#gabriella"]{
+	grid-area: 4 / 13 / 5 / 15;
+}
+a[href="#veezara"]{
+	grid-area: 5 / 8 / 6 / 11;
+}
+a[href="#ciceron"]{
+	grid-area: 5 / 11 / 6 / 13;
+}
+a[href="#babette"]{
+	grid-area: 5 / 13 / 6 / 15;
+}
+a[href="#arnbjorn"]{
+	grid-area: 6 / 9 / 7 / 12;
+}
+a[href="#festo"]{
+	grid-area: 6 / 11 / 7 / 15;
+}
+
+
+.section__char{
+	width: 100%;
+	height: 100%;
+	grid-area: 2 / 1 / 10 / 6;
+	clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+	transition: clip-path 0.3s 0.5s;
+}
+.section__char:focus{
+	transition: clip-path 0.2s 0.2s;
+}
+.char__img{
+	width: 100%;
+	height: 100%;
+}
+#ciceron, #festo, #arnbjorn{
+	width: 50%;
+}
+#gabriella, #veezara{
+	width: 75%;
+}
+#babette{
+	width: 75%;
+	height: 70%;
+}
+#astrid:target{
+	clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+#nazir:target{
+	clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+#ciceron:target{
+	clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+#babette:target{
+	clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+#gabriella:target{
+	clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+#festo:target{
+	clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+#arnbjorn:target{
+	clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+#veezara:target{
+	clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
