@@ -1,66 +1,126 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>La Hermandad Oscura</title>
-	<link rel="stylesheet" type="text/css" href="css/normalize.css">
-	<link rel="stylesheet" type="text/css" href="css/styles.css">
-
+	<title>Landing Page</title>
+	<link rel="stylesheet" type="text/css" href="assets/styles/normalize.css">
+	<link rel="stylesheet" type="text/css" href="assets/styles/styles.css">
 </head>
-<body onload="myFunction()">
-	<figure id="door" style="transform: scale(1);">
+<body>
 
-	</figure>
-	<section class="section">
-		<h1 class="section__title">La Hermandad Oscura</h1>
-		<a href="#modal" class="section__minirules">
-			<img src="img/rules.png" class="minirules__img">
-		</a>
-		<figure id="modal" class="section__rules">
-			<img src="img/rules.jpg" class="rules__img">
+	<header class="header section">
+		<figure class="header__logo">
+			<img src="assets/images/logo.svg" class="header__logo--img">
 		</figure>
-		<a href="#" class="modaloff"></a>
-		<figure id="know"></figure>
-
-
-		<h2 class="section__subtitle">Miembros</h2>
-		<a href="#astrid" class="section__face">Astrid</a>
-		<a href="#nazir" class="section__face">Nazir</a>
-		<a href="#ciceron" class="section__face">Cicerón</a>
-		<a href="#babette" class="section__face">Babette</a>
-		<a href="#gabriella" class="section__face">Gabriella</a>
-		<a href="#festo" class="section__face">Festo Krex</a>
-		<a href="#arnbjorn" class="section__face">Arnbjorn</a>
-		<a href="#veezara" class="section__face">Veezara</a>
-
-
-		<figure id="astrid" class="section__char">
-			<img src="img/astrid.png" class="char__img">
-		</figure>
-		<figure id="nazir" class="section__char">
-			<img src="img/nazir.png" class="char__img">
-		</figure>
-		<figure id="ciceron" class="section__char">
-			<img src="img/ciceron.png" class="char__img">
-		</figure>
-		<figure id="babette" class="section__char">
-			<img src="img/babette.png" class="char__img">
-		</figure>
-		<figure id="gabriella" class="section__char">
-			<img src="img/gabriella.png" class="char__img">
-		</figure>
-		<figure id="festo" class="section__char">
-			<img src="img/festo.png" class="char__img">
-		</figure>
-		<figure id="arnbjorn" class="section__char">
-			<img src="img/arnbjorn.png" class="char__img">
-		</figure>
-		<figure id="veezara" class="section__char">
-			<img src="img/veezara.png" class="char__img">
-		</figure>
+		<a href="#" class="header__cta cta">Try It Free</a>
+	</header>
+	<section class="firstsection section">
+		<div class="first__texts texts">
+			<h2 class="first__title title">Build The Community Your Fans Will Love</h2>
+			<p class="first__paragraph paragraph">Huddle re-imagines the way we build communities. You have a voice, but so does your audience. Create connections with your users as you engage in genuine discussion.</p>
+			<a href="#" class="first__cta cta started__cta">Get Started For Free</a>
+		</div>
+		<div class="first__images images">
+			<figure class="first__fig">
+				<img src="assets/images/screen-mockups.svg" class="first__fig--img">
+			</figure>
+			<div class="first__communities">
+				<figure class="communities__fig">
+					<img src="assets/images/icon-communities.svg" class="communities__fig--img">
+				</figure>
+				<h2 class="communities__title title">
+					1.4k+
+				</h2>
+				<h3 class="communities__subtitle subtitle">Communities Formed</h3>
+			</div>
+			<div class="first__messages">
+				<figure class="messages__fig">
+					<img src="assets/images/icon-messages.svg" class="messages__fig--img">
+				</figure>
+				<h2 class="messages__title title">
+					2.7m+
+				</h2>
+				<h3 class="messages__subtitle subtitle">Messages Sent</h3>
+			</div>
+		</div>
+	</section>
+	<section class="secondsection section">
+		<div class="second__texts texts">
+			<h2 class="second__title title">Grow Together</h2>
+			<p class="second__paragraph paragraph">Generate meaningful discussions with your audience and build a strong, loyal community. Think of the insightful conversations you miss out on with a feedback form.</p>
+		</div>
+		<div class="second__images images">
+			<figure class="second__fig">
+				<img src="assets/images/illustration-grow-together.svg" class="second__fig--img">
+			</figure>
+		</div>
+	</section>
+	<section class="thirdsection section inverse">
+		<div class="third__texts texts">
+			<h2 class="third__title title">Flowing Conversations</h2>
+			<p class="third__paragraph paragraph">You wouldn't paginate a conversation in real life, so why do it online? Our threads have just-in-time loading for a more natural flow.</p>
+		</div>
+		<div class="third__images images">
+			<figure class="third__fig">
+				<img src="assets/images/illustration-flowing-conversation.svg" class="third__fig--img">
+			</figure>
+		</div>
+	</section>
+	<section class="forthsection section">
+		<div class="forth__texts texts">
+			<h2 class="forth__title title">Your Users</h2>
+			<p class="forth__paragraph paragraph">It takes no time at all to integrate Huddle with your app's authentication solution. This means, once signed in to your app, your users can start chatting immediately.</p>
+		</div>
+		<div class="forth__images images">
+			<figure class="forth__fig">
+				<img src="assets/images/illustration-your-users.svg" class="forth__fig--img">
+			</figure>
+		</div>
+	</section>
+	<section class="fifthsection section">
+		<div class="fifth__texts texts">
+			<h2 class="fifth__title title">Ready To Build Your Community?</h2>
+			<a href="" class="started__cta cta">Get Started For Free</a>
+		</div>
+	</section>
+	<footer class="footer section">
+		<div class="footer__contact">
+			<figure class="footer__logo">
+				<img src="assets/images/logo-white.svg" class="footer__logo--img">
+			</figure>
+			<p class="footer__paragraph paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut enim ad minim veniam, quis nostrud.</p>
+			<div class="footer__copy">
+				<img src="assets/images/icon-phone.svg" class="copy__img">
+				<p class="copy__paragraph paragraph">Phone:+1-543-123-4567</p>
+			</div>
+			<div class="footer__copy">
+				<img src="assets/images/icon-email.svg" class="copy__img">
+				<p class="copy__paragraph paragraph">example@huddle.com</p>
+			</div>
+		</div>
+		<div class="footer__newsletter">
+			<h2 class="newsletter__title title">NEWSLETTER</h2>
+			<p class="newsletter__paragraph paragraph">To recieve tips on how to grow your community, sign up to our weekly newsletter. We’ll never send you spam or pass on your email address</p>
+			<form class="newsletter__form">
+			<input type="email" required>
+			<input type="submit" value="Subscribe" class="cta">
+			</form>
+		</div>
+	</footer>
+	<section class="links section">
+		<div class="footer__links">
+			<a href="#" class="footer__link">
+				<img src="assets/images/fb.svg" class="footer__link--img">
+			</a>
+			<a href="#" class="footer__link">
+				<img src="assets/images/instagram.svg" class="footer__link--img">
+			</a>
+			<a href="#" class="footer__link">
+				<img src="assets/images/twitter.svg" class="footer__link--img">
+			</a>
+	</div>
 	</section>
 
-	<script type="text/javascript" src="scripts/script.js"></script>
 </body>
 </html>
