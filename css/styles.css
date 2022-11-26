@@ -75,7 +75,7 @@ picture {
 }
 .pie {
   width: 100%;
-  height: 85%;
+  height: 80%;
   background-color: #000;
   z-index: 1;
 }
@@ -146,23 +146,8 @@ img {
   13% {
     transform: translateY(0);
   }
-  26% {
-    transform: translateY(-50pt);
-  }
-  39% {
-    transform: translateY(-100pt);
-  }
-  52% {
-    transform: translateY(-150pt);
-  }
-  65% {
-    transform: translateY(-200pt);
-  }
-  78% {
-    transform: translateY(-250pt);
-  }
   91% {
-    transform: translateY(-300pt);
+    transform: translateY(-400pt);
   }
 }
 
