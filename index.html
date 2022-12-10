@@ -1,55 +1,159 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>La Hermandad Oscura</title>
-    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
-    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trucos CSS</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <picture class="sol">
-      <img src="/img/sol.svg" class="sol__img" />
-    </picture>
-    <picture class="luna">
-      <img src="/img/luna.svg" alt="" class="luna__img" />
-    </picture>
-    <picture class="nube nube1">
-      <img src="/img/nube.svg" alt="" class="nube__img" />
-    </picture>
-    <picture class="nube nube2">
-      <img src="/img/nube.svg" alt="" class="nube__img" />
-    </picture>
-    <picture class="nube nube3">
-      <img src="/img/nube.svg" alt="" class="nube__img" />
-    </picture>
+    <a href="#index" class="goIndex">^</a>
+    <section class="index" id="index">
+      <h2 class="index__title">Indice</h2>
+      <ul class="index__list">
+        <li class="index__element">
+          <a href="#text-gradient" class="element__link">
+            Texto con fondo degradado
+          </a>
+        </li>
+        <li class="index__element">
+          <a href="#text-3D" class="element__link">Texto en 3D</a>
+        </li>
+        <li class="index__element">
+          <a href="#text-glitch" class="element__link">Texto Glitch</a>
+        </li>
+        <li class="index__element">
+          <a href="#curve-shadow" class="element__link">Sombras Curvas</a>
+        </li>
+        <li class="index__element">
+          <a href="#border-shadow" class="element__link"
+            >Bordes con box-shadow</a
+          >
+        </li>
+        <li class="index__element">
+          <a href="#background-slides" class="element__link"
+            >Background slide</a
+          >
+        </li>
+        <li class="index__element">
+          <a href="#animated-border" class="element__link">Bordes animados</a>
+        </li>
+        <li class="index__element">
+          <a href="#button" class="element__link">Boton</a>
+        </li>
+        <li class="index__element">
+          <a href="#border-corner" class="element__link">Bordes en esquinas</a>
+        </li>
+        <li class="index__element">
+          <a href="#repeated-degreed" class="element__link"
+            >Degradados repetidos</a
+          >
+        </li>
+        <li class="index__element">
+          <a href="#circular-progress" class="element__link"
+            >Barra de Progreso Circular</a
+          >
+        </li>
+        <li class="index__element">
+          <a href="#toggle-button" class="element__link">Toggle Button</a>
+        </li>
+        <li class="index__element">
+          <a href="#magic" class="element__link">Boton con Fondo</a>
+        </li>
+      </ul>
+    </section>
+    <section id="text-gradient">
+      <h2 class="text-gradient__title">Texto con fondo degradado</h2>
+    </section>
+    <section id="text-3D">
+      <h2 class="text-3D__title">Texto en 3D</h2>
+    </section>
+    <section id="text-glitch">
+      <h2 class="text-glitch__title">Texto Glitch</h2>
+    </section>
+    <section id="curve-shadow">
+      <div class="curve-shadow__box">
+        <h2 class="curve-shadow__title">Sombra curva</h2>
+      </div>
+      <div class="curve-shadow__box2">
+        <h2 class="curve-shadow__title">Sombra curva 2</h2>
+      </div>
+    </section>
+    <section id="border-shadow">
+      <div class="border-shadow__box">
+        <h2 class="border-shadow__title">Bordes con box-shadow</h2>
+      </div>
+    </section>
+    <section id="background-slides">
+      <h2 class="background-slides__title">Background slide</h2>
+      <div class="slide__boxes">
+        <div class="slide__box">
+          <h2 class="slide__title">Left to right</h2>
+        </div>
+        <div class="slide__box">
+          <h2 class="slide__title">Right to left</h2>
+        </div>
+        <div class="slide__box">
+          <h2 class="slide__title">Top to bottom</h2>
+        </div>
+        <div class="slide__box">
+          <h2 class="slide__title">Bottom to Top</h2>
+        </div>
+        <div class="slide__box">
+          <h2 class="slide__title">Doble slide horizontal</h2>
+        </div>
+        <div class="slide__box">
+          <h2 class="slide__title">Doble slide vertical</h2>
+        </div>
+      </div>
+    </section>
+    <section id="animated-border">
+      <div class="animated-border__box">
+        <h2 class="animated-border__title">Bordes animados</h2>
+      </div>
+    </section>
+    <section id="button">
+      <div class="button__box">
+        <h2 class="button__title">Boton</h2>
+        <p class="button__text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
+          quia illum ipsam, facilis quis iure reiciendis et rem sequi nobis
+          assumenda debitis corporis? Aliquam ex eos quod tempore porro quasi.
+          <br /><br />
+          ipsum dolor sit amet consectetur, adipisicing elit. Molestias tempora,
+          aliquam natus molestiae, eveniet ipsam error nam quia, temporibus iure
+          veritatis doloremque illum magnam dignissimos commodi quibusdam
+          veniam. Veritatis, tempora!
+        </p>
+        <a class="button__button">Suscribirse</a>
+      </div>
+    </section>
+    <section id="border-corner">
+      <h2 class="border-corner__title">Bordes en esquinas</h2>
+      <div class="border-corner__box">
+        <img src="/picture.jpg" alt="" class="border-corner__img" />
+      </div>
+    </section>
+    <section id="repeated-degreed">
+      <h2 class="repeated-degreed__title">Degradados repetidos</h2>
+      <div class="repeated-degreed__box"></div>
+    </section>
 
-    <div class="pie"></div>
-    <div class="text">
-      <!-- <h1 class="sol__text">
-        A veces la vida vuelve a las personas solitarias
-      </h1>
-      <h1 class="sol__text">
-        Y esas personas viven deseando tener algo pero...
-      </h1>
-      <h1 class="sol__text">
-        Por mucho que se esfuerzan... no lo consiguen&nbsp;
-      </h1>
-      <h1 class="sol__text">
-        Yo? Yo fui una persona afortunada y lo sigo siendo
-      </h1>
-      <h1 class="sol__text">
-        El por qué? Porque te conocí a ti, y a pesar de todo
-      </h1>
-      <h1 class="sol__text">
-        De nuestra historia, de nuestros aciertos y fracasos
-      </h1>
-      <h1 class="sol__text">
-        Sigues y seguiras siendo una persona importante para mi
-      </h1> -->
-      <!-- <h1 class="sol__text">.....</h1> -->
-      <h1 class="sol__text">Si yo soy el sol que hace brillar tu mundo...</h1>
-      <h1 class="sol__text">Tu eres la luna que ilumina mis noches</h1>
-    </div>
+    <section id="circular-progress">
+      <h2 class="circular-progress__title">Barra de progreso circular</h2>
+      <div class="circular-progress__box"></div>
+    </section>
+    <section id="toggle-button">
+      <h2 class="toggle-button__title">Toggle Button</h2>
+      <input type="checkbox" id="toggle" />
+      <label for="toggle" class="toggle-button__button"></label>
+      <label for="toggle" class="toggle-button__button2"></label>
+    </section>
+    <section id="magic">
+      <h2 class="magic">"Boton con Fondo"</h2>
+      <button class="magic__button">Boton Magico</button>
+    </section>
   </body>
 </html>
+
